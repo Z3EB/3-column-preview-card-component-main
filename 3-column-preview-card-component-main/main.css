@@ -1,0 +1,211 @@
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 65vw;
+    height: auto;
+    display: flex;
+}
+
+
+.left-container {
+    background-color: hsl(31, 77%, 52%);
+    flex: 1;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.middle-container {
+    background-color: hsl(184, 100%, 22%);
+    flex: 1;
+    border-top-left-radius: 0;
+}
+
+.right-container {
+    background-color: hsl(179, 100%, 13%);
+    flex: 1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left-container,
+.middle-container,
+.right-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    align-items: flex-start;
+}
+
+img {
+    width: 4.5vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+.name-of-car {
+    font-size: 2.8vw;
+    font-family: Big Shoulders Display;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 2vw;
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9vw;
+    font-weight: 400;
+    word-spacing: 0.03vw;
+    line-height: 1.6vw;
+    margin-bottom: 5vw;
+    text-align: start;
+    width: 12vw;
+}
+
+.left-container .button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    padding: 0.8vw 2.4vw;
+    border-radius: 2vw;
+    font-size: 0.9vw;
+    border: 2px solid transparent;
+}
+
+.middle-container .description {
+    width: 11.26vw;
+}
+
+.middle-container .button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    padding: 0.8vw 2.4vw;
+    border-radius: 2vw;
+    font-size: 0.9vw;
+    border: 2px solid transparent;
+}
+
+.right-container .button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    padding: 0.8vw 2.4vw;
+    border-radius: 2vw;
+    font-size: 0.9vw;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:375px) {
+    .main-container {
+        width: 30vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-container {
+        background-color: hsl(31, 77%, 52%);
+        flex: 1;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .right-container {
+        background-color: hsl(179, 100%, 13%);
+        flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+
+    .left-container,
+    .middle-container,
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        padding: 7vw;
+        align-items: flex-start;
+    }
+
+
+    img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .name-of-car {
+        font-size: 30px;
+        font-family: Big Shoulders Display;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+        margin-bottom: 10px;
+    }
+
+    .description {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 10px;
+        font-weight: 400;
+        word-spacing: 0px;
+        line-height: 20px;
+        width: 100%;
+
+    }
+
+
+    .middle-container .description {
+        width: 100%;
+    }
+
+    .left-container .button {
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(31, 77%, 52%);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 5px;
+        border: 2px solid transparent;
+    }
+
+    .middle-container .button {
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(184, 100%, 22%);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 5px;
+        border: 2px solid transparent;
+    }
+
+    .right-container .button {
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(179, 100%, 13%);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 5px;
+        border: 2px solid transparent;
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+
+}
